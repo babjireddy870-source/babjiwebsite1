@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Babji Website</title>
+    <title>Babji Portfolio</title>
 
     <style>
         body {
-            background-color: #f0f8ff;
-            text-align: center;
+            margin: 0;
             font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid white;
         }
 
         h1 {
             font-size: 40px;
-            color: #2c3e50;
         }
 
         p {
             font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .skills {
+            margin-top: 40px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: white;
+            color: #333;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 16px;
         }
 
         button {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 25px;
+            margin-top: 30px;
+            background: #ff9800;
             border: none;
-            border-radius: 5px;
+            padding: 12px 25px;
             font-size: 18px;
+            border-radius: 25px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background: #e68900;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Welcome to My Website 🚀</h1>
-    <p>Hello, I am Babji. I am learning Web Development.</p>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="My Photo">
 
-    <button>Contact Me</button>
+        <h1>Hello, I'm Babji 👋</h1>
+
+        <p>
+            I am learning Web Development. I love building websites 
+            and improving my technical skills every day.
+        </p>
+
+        <div class="skills">
+            <h2>My Skills</h2>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>GitHub</span>
+        </div>
+
+        <button onclick="contact()">Contact Me</button>
+    </div>
+
+    <script>
+        function contact() {
+            alert("You can contact me soon! 😊");
+        }
+    </script>
 
 </body>
 </html>
